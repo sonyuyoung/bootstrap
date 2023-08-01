@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>디스플레이</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <style>
+    div {
+      margin: 10px;
+      color: white;
+      padding: 5px;
+      /* min-height: 50px; */
+      /* display: inline-block; */
+    }
+
+    body {
+      margin-bottom: 500px;
+    }
+  </style>
+
+  <body>
+    <!-- SIZINGS RELATIVE TO PARENT -->
+    <!-- sizing  부모의 몇 %  -->
+    <div class="bg-primary w-25">Width 25%</div>
+    <div class="bg-primary w-50">Width 50%</div>
+    <div class="bg-primary w-75">Width 75%</div>
+    <div class="bg-primary w-auto">Width auto</div>
+
+    <!--  d-inline-block h-25 인라인인데 가로세로 사이즈를 정할 수 있음 -->
+    <div class="bg-dark" style="height: 500px">
+      <div class="bg-primary d-inline-block h-25">Height 25%</div>
+      <div class="bg-primary d-inline-block h-50">Height 50%</div>
+      <div class="bg-primary d-inline-block h-75">Height 75%</div>
+      <div class="bg-primary d-inline-block h-100">Height auto</div>
+    </div>
+
+    <!-- RELATIVE TO THE VIEWPORT -->
+
+    <div class="bg-primary vh-100"></div>
+    <div class="bg-primary min-vh-100"></div>
+
+    <div class="bg-primary vw-100"></div>
+    <div class="bg-primary min-vw-100"></div>
+  </body>
+</html>

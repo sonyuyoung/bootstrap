@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>디스플레이</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <style>
+    div > div {
+      min-height: 70px;
+      min-width: 70px;
+      margin: 20px;
+      display: inline-block;
+      background-color: #1e1e1e;
+    }
+    div {
+      min-width: 50px;
+      min-height: 50px;
+    }
+    body {
+      margin-bottom: 500px;
+    }
+  </style>
+
+  <body>
+    <!-- POSITIONS -->
+
+    <div class="position-relative" style="height: 100vh">
+      <div class="position-absolute"></div>
+      <div class="bg-primary position-absolute bottom-50 end-50"></div>
+      <div class="bg-danger position-absolute bottom-0 end-0"></div>
+      <div class="position-absolute top-50 start-50 translate-middle"></div>
+      <div class="bg-info position-absolute top-o end-0"></div>
+      <!-- <div class="position-absolute top-100 start-0"></div> -->
+    </div>
+
+    <div class="position-fixed bg-primary top-50 start-50"></div>
+
+    <button class="btn btn-primary position-relative">
+      Mails
+
+      <!-- translate-middle  자기사이즈의 절반만큼 안으로 들어오게됨 -->
+      <span
+        class="position-absolute bg-danger badge rounded-pill top-10 start-100 translate-middle"
+        >+99</span
+      >
+    </button>
+  </body>
+</html>
