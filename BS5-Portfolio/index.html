@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+     
+     
+     
+     .nav-link.active {
+        color: black !important;
+      
+      }
+      .bg_color {
+    }
+      /* fonts */
+      @font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.carousel-inner {
+
+margin: 0 auto;
+height: 950px;
+}
+.carousel-item { width: 100%;height:100%;}
+.carousel-item > img {width: 1650px;height: auto;} 
+
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 35px;
+  color: black
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 35px;
+  color: black;
+
+} */
+    </style>
+  </head>
+  <body style="font-family: 'NEXON Lv1 Gothic OTF' " data-bs-spy="scroll" data-bs-target="#nav-scroll">
+
+  <body>
+    <!-- CONTAINER MD-->
+
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top "
+      id="nav-scroll"
+    >
+      <div class="container ">
+        <a href="#" class="navbar-brand text-black" style="font-size: 25px;">PORTFOLIO</a>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navBar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navBar ">
+          <ul class="navbar-nav fw-bold ms-auto active" style="font-size: 18px;">
+         
+            <li class="nav-item" >
+              <a href="#carouselExampleCaptions" class="nav-link " >Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a href="#about" class="nav-link text-black ">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link text-black ">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link text-black ">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link text-black ">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 네비게이션끝 -->
+    <!-- 홈섹션시작 -->
+
+    <div id="carouselExampleCaptions" class="carousel slide home" data-bs-ride="false">
+      <div class="carousel-indicators " >
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="image/img12.jpg " class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/img11.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="image/img9.jpg " class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon " aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- <section
+      id="home"
+      class="vh-100 d-flex flex-column justify-content-center align-item-center"
+      style="background-image: url('image/hero-bg.jpg')"
+    > -->
+<!-- 
+    <section
+      id="home"
+      class="d-flex min-vh-100 flex-column justify-content-center align-items-center"
+      style="background-image: url('image/hero-bg.jpg')"
+    >
+      <h1 class="fw-bolder display-1 mb-3">lucie anderson</h1>
+      <h6 class="fs-3 text-secondary text-capitalize mb-4">
+        I'm a professional front-end web developer
+      </h6>
+      <a href="#about" class="btn btn-danger rounded-pill">About Me</a>
+    </section> -->
+
+    <!-- 홈섹션끝 -->
+
+    <!--어바웃섹션 시작  -->
+    <section id="about" class="container py-5 ">
+      <div class="text-center py-5 bg_color">
+        <h2 class="fw-bolder text-uppercase">about</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+          voluptatum!
+        </p>
+      </div>
+      <!-- 전체 12  -->
+      <div class="row mb-5">
+        <div class="col-md-4 mb-3">
+          <img src="image/img8.jpg" alt="" class="img-fluid" />
+        </div>
+        <div class="col-md-7 offset-lg-1">
+          <p class="lh-lg">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
+            veritatis animi distinctio minus nihil officiis laboriosam sed
+            reiciendis consequatur voluptatum dolore perspiciatis voluptas
+            consectetur omnis! Eaque, soluta iusto. Alias, fuga velit optio
+            necessitatibus totam blanditiis mollitia quisquam est nesciunt sit
+            molestiae quibusdam obcaecati. Id commodi ratione hic impedit, sit
+            quaerat.
+          </p>
+          <p class="fw-bold fs-4">My Skills:</p>
+          <p>AL / PS :</p>
+          <div class="progress">
+            <div
+              class="progress-bar bg-danger "
+              style="width: 80%"
+            >
+              80%
+            </div>
+          </div>
+          <p>HTML:</p>
+          <div class="progress">
+            <div
+              class="progress-bar bg-info "
+              style="width: 20%"
+            >
+              20%
+            </div>
+          </div>
+          <p>HTML:</p>
+          <div class="progress">
+            <div
+              class="progress-bar "
+              style="width: 20%"
+            >
+              20%
+            </div>
+          </div>
+          <p>CSS:</p>
+          <div class="progress">
+            <div
+              class="progress-bar bg-info"
+              style="width: 20%"
+            >
+              20%
+            </div>
+          </div>
+          <p>JS:</p>
+          <div class="progress">
+            <div
+              class="progress-bar  bg-warning"
+              style="width: 10%"
+            >
+              10%
+            </div>
+          </div>
+          <p>Bootstrap 5:</p>
+          <div class="progress">
+            <div
+              class="progress-bar  bg-danger"
+              style="width: 30%"
+            >
+              30%
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--어바웃섹션 끝  -->
+
+    <!-- 포트폴리오섹션  -->
+    <section id="portfolio" class="bg-light py-5">
+      <div class="container">
+        <div class="text-center py-5 text-black">
+          <h2 class="fw-bolder text-uppercase">My Portfolio</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatem, doloribus?
+          </p>
+        </div>
+        <!-- img-fluid 가로세로 100%  -->
+        <div class="row pb-5 ">
+          <div class="col-md-6 col-lg-4 mb-4 h-100">
+            <img src="image/1.PNG" alt="" class="img-fluid h_t" />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img src="image/2.PNG" alt="" class="img-fluid  h_t" />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img src="image/3.PNG" alt="" class="img-fluid  h_t" />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img src="image/4.PNG" alt="" class="img-fluid h_t " />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img src="image/5.PNG" alt="" class="img-fluid  h_t " />
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4">
+            <img src="image/6.PNG" alt="" class="img-fluid  h_t" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 포트폴리오섹션  끝 -->
+
+    <!--블로그섹션 -->
+    <section id="blog" class="container py-5">
+      <div class="text-center py-5">
+        <h2 class="fw-bolder text-uppercase">My Blog</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem,
+          doloribus?
+        </p>
+      </div>
+      <div class="row pb-5">
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card">
+            <img src="image/img7.jpg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title text-center py-2">
+                Lorem ipsum dolor sit amet.
+              </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                at illum natus sequi explicabo, adipisci saepe et. Vero, labore
+                enim.
+              </p>
+              <a href="#" class="btn btn-dark">Read more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-4">
+          <div class="card">
+            <img src="image/img6.jpg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title text-center py-2">
+                Lorem ipsum dolor sit amet.
+              </h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                at illum natus sequi explicabo, adipisci saepe et. Vero, labore
+                enim.
+              </p>
+              <a href="#" class="btn btn-dark">Read more...</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--블로그섹션 끝 -->
+
+    <!-- 컨텍트 섹션  -->
+    <section id="contact" class="btn-light py-5">
+      <div class="container">
+        <div class="text-center py-5 text-dark">
+          <h2 class="fw-bolder text-uppercase mb-3">Contact Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatem, doloribus?
+          </p>
+        </div>
+        <div
+          class="col-11 col-sm-10 col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto mb-5"
+        >
+          <form  class="text-dark">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Your Subject</label>
+              <input type="text" class="form-control" />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Messagge</label>
+              <textarea
+                name="message"
+                rows="10"
+                class="form-control"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark btn-lg">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- 컨텍트 섹션  끝-->
+
+    <!-- 푸터 -->
+    <footer class="bg-dark">
+      <div class="container text-center" style="font-size: 18px ; height: 150px">
+        <p class="py-3 fs-5 text-white">
+        
+
+          <a
+            href="#본인블로그주소"
+            class="text-danger fst-italic text-white"
+            target="_blank" style="text-decoration: none; font-size: 13px ;font-weight:300;"
+            ><hr>https://blog.naver.com/sonyuyoung</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- 푸터 끝-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
