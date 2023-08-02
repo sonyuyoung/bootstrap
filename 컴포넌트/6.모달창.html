@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>카드</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .card {
+        /* width: 400px; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container py-5">
+      <!-- 버튼 -->
+      <!-- NORMAL MODAL-->
+      <button
+        class="btn btn-danger"
+        data-bs-target="#ourModal"
+        data-bs-toggle="modal"
+      >
+        모달버튼
+      </button>
+      <!-- 모달창  -->
+      <!-- 기본은 안보이는데 
+     -->
+      <div class="modal fade" id="ourModal" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">모달제목</h5>
+              <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+              <p>모달창 만들기</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-dismiss="modal">
+                닫기
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

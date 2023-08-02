@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>페이지네이션</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+      .card {
+        /* width: 400px; */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container py-5">
+      <!-- NORMAL PAGINATION -->
+      <!--  disabled이 있으면 클릭이안돼게 만들어놓음  -->
+      <nav>
+        <ul class="pagination">
+          <li class="page-item">
+            <a href="#" class="page-link">😊</a>
+          </li>
+          <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">4</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">5</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">6</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">7</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">8</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">다음</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- LARGE PAGINATION -->
+
+      <nav>
+        <ul class="pagination pagination-lg">
+          <li class="page-item disabled">
+            <a href="#" class="page-link">이전</a>
+          </li>
+          <!-- 실제페이지번호  -->
+          <!-- 현재페이지는  ACTIVE -->
+          <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">다음</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- SMALL PAGINATION -->
+
+      <nav>
+        <ul class="pagination pagination-sm">
+          <li class="page-item disabled">
+            <a href="#" class="page-link">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item active">
+            <a href="#" class="page-link">1</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">2</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#" class="page-link">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
